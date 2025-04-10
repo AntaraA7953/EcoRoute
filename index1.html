@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoRoute - Green Navigation</title>
+  <link rel="stylesheet" href="style1.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body class="dark">
+  <div class="container">
+    <header>
+      <h1>🌍 EcoRoute</h1>
+      <p>Green Navigation for Eco-Commuters</p>
+      <button id="toggleTheme">Toggle 🌞/🌙</button>
+    </header>
+
+    <main>
+      <section class="sidebar">
+        <div class="card">
+          <h2>Find a Route</h2>
+          <input type="text" placeholder="Enter destination" id="searchInput"/>
+        </div>
+
+        <div class="card">
+          <h2>Green Score</h2>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%;"></div>
+          </div>
+          <p>This route is very eco-friendly.</p>
+        </div>
+
+        <div class="card">
+          <h2>Weather & Air Quality</h2>
+          <p>☀️ Temp: 24°C</p>
+          <p>💨 AQI: 42 (Good)</p>
+          <p>🌳 Trees: High</p>
+        </div>
+      </section>
+
+      <section class="map-area">
+        <div id="map" style="height: 400px; width: 100%;"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="scripts1.js"></script>
+</body>
+</html>
