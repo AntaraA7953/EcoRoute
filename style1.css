@@ -11,13 +11,13 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  /* background: var(--bg-color); */
+   background: var(--bg-color); 
   color: var(--text-color);
   padding: 20px;
   transition: background 0.3s, color 0.3s;
 }
 
-#bg-video {
+.bg-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +25,13 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  transition: opacity 0.5s ease-in-out;
+
 }
+.hidden {
+  display: none;
+}
+
 
 .container {
   max-width: 1200px;
